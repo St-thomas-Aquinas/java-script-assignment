@@ -74,3 +74,72 @@ function findlargest(){
 findlargest()
 //end
 
+//challenge 7: calculate body mass index
+function calculateBM1(){
+    console.log("iam the function for calculating BMI")
+    let height = 62;
+    let weight = 2;
+    let BMI = weight/(height*height)
+    
+    if(BMI < 18.5){
+        console.log(`your BMI IS   ${BMI} you are underweight} `);
+    }
+    else if(BMI =18.5 || BM1 <=24.9){
+        console.log(`your BMI IS   ${BMI} you are Normal weight} `);
+    }
+    else if(BMI = 25 || BM1 <=29.9){
+        console.log(`your BMI IS  ${BMI} you are Overweight} `);
+    }
+    else if(BMI >= 30){
+        console.log(`your BMI IS   ${BMI} you are obese} `);
+    }
+    }
+    calculateBM1()
+//end
+
+//challenge 8 ; greeting based on time
+
+function greetuser(){
+    let time = new Date();
+   let hours = time.getHours();
+   console.log("Iam a greeting function")
+
+   if(hours >= 5 || hours <= 11){
+    console.log(`Good morning alice`);
+}
+else if(hours >= 12 || hours <=17){
+    console.log(`Good afternoon ,alice `);
+}
+else if(hours >= 18 || hours <=21){
+    console.log(`good evening alice`);
+}
+else if(hours >= 22 || hours <= 24){
+    console.log(`good night,alice`);
+}
+
+}
+greetuser()
+
+//end
+
+//challenge: fizzbuz
+function fizzbuzCheck(){
+    let number = 15;
+    let results3 = number%3;
+    let results5 =number%5;
+    
+   if(results3 == 0){
+    console.log(`FIZZ Number is divisble by 3`);
+}
+else if(results5 == 0){
+    console.log(`BUZZ number is divisible by 5 `);
+}
+else if(results3 == 0 && results3 == 0){
+    console.log(`fizz buzz`);
+}
+
+}
+
+fizzbuzCheck()
+
+//end
