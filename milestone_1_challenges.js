@@ -29,3 +29,48 @@ function perimenter(){
     console.log(answer)
 }
 perimenter()
+
+//end 
+
+//challenge 4: checking if number is negative
+function isNegative(){
+    console.log("Iam the function of checking if a number is negative")
+    let number = -10;
+    if (number < 0){
+        console.log("The number is negative")
+    }
+    else
+    console.log("The number is postive")
+}
+isNegative()
+
+//end
+
+//challenge 5: checking if a person can drive.
+function Drive(){
+    console.log("Iam the function that is checking if you are old enough to drive")
+    let fname = "maxwell"
+    let Lastname = "Kuria";
+    let age = 24
+    if (age >=18){
+        console.log(`Congratulation ${fName} ${lastName}`);
+    }
+     else{
+        console.log(`sorry  ${fName} ${lastName} you are not old enough`);
+     }
+}
+
+//end
+
+//challenge 6: finding the largest number
+function findlargest(){
+    console.log("Iam the function that is comparing which of 3 number is bigger")
+    let num1 = 100;
+    let num2 = 200;
+    let num3 = 300;
+    let max = Math.max(num1, num2, num3);
+    console.log(`Between   ${num1} ${num2} ${num3} this is the largest ${max} `);
+}
+findlargest()
+//end
+
