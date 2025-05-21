@@ -1,3 +1,9 @@
+//these function seperates the output
+function separator(){
+    console.log("_____________________________________________________________")
+}
+separator()
+
 //Challenge 1 : Sum of two numbers
 function addition(num1,num2){
 
@@ -7,6 +13,7 @@ function addition(num1,num2){
 console.log("Challenge 1 : Sum of two numbers is")
   let result = addition(100,100)
   console.log(result)
+  separator()
 // End
 
 
@@ -18,6 +25,7 @@ function convert(){
     console.log(results)
 }
 convert()
+separator()
 //end
 
 //Challenge 3 : Calculating the perimenter of a rectangle
@@ -43,23 +51,25 @@ function isNegative(){
     console.log("The number is postive")
 }
 isNegative()
+separator()
 
 //end
 
 //challenge 5: checking if a person can drive.
 function Drive(){
-    console.log("Iam the function that is checking if you are old enough to drive")
-    let fname = "maxwell"
+    console.log("Iam the function that is checking if you are old enough to drive");
+    let fname = "maxwell";
     let Lastname = "Kuria";
     let age = 24
     if (age >=18){
-        console.log(`Congratulation ${fName} ${lastName}`);
+        console.log(`Congratulation ${fname} ${Lastname}`);
     }
      else{
         console.log(`sorry  ${fName} ${lastName} you are not old enough`);
      }
 }
-
+Drive()
+separator()
 //end
 
 //challenge 6: finding the largest number
@@ -72,6 +82,7 @@ function findlargest(){
     console.log(`Between   ${num1} ${num2} ${num3} this is the largest ${max} `);
 }
 findlargest()
+separator()
 //end
 
 //challenge 7: calculate body mass index
@@ -95,6 +106,7 @@ function calculateBM1(){
     }
     }
     calculateBM1()
+    separator()
 //end
 
 //challenge 8 ; greeting based on time
@@ -119,7 +131,7 @@ else if(hours >= 22 || hours <= 24){
 
 }
 greetuser()
-
+separator()
 //end
 
 //challenge: fizzbuz
@@ -131,15 +143,122 @@ function fizzbuzCheck(){
    if(results3 == 0){
     console.log(`FIZZ Number is divisble by 3`);
 }
-else if(results5 == 0){
+ if(results5 == 0){
     console.log(`BUZZ number is divisible by 5 `);
 }
-else if(results3 == 0 && results3 == 0){
+ if(results3 == 0 && results3 == 0){
     console.log(`fizz buzz`);
 }
 
 }
 
 fizzbuzCheck()
+separator()
 
 //end
+
+//challenge 10: perimeter
+ function perimenter2(){
+    let shape = "s"
+    let num = 10;
+    if (shape = "s"){
+        console.log("You have chose a square the perimeter is")
+        console.log(num*num)
+
+    }
+    else{
+        console.log("you have chosen a circle the perimeter is")
+        console.log(3.142*10)
+    }
+
+ }
+ perimenter2()
+ separator()
+
+ //end
+
+ //challenge 11: sum of even number
+ function sumEvenNumber(n){
+    console.log("Iam the function excuting challenge 11")
+    let number = 0;
+
+    for (let i = 2; i <= n; i +=2) {
+     number += i;
+     
+    }
+return number
+}
+console.log(sumEvenNumber(10))
+separator()
+
+//challenge 12 : multiply by itself
+function powerUp(num,times){
+    console.log("Iam the function excuting challenge 12")
+    let answer = 1;
+  
+
+  for (let i = 0; i < times; i++) {
+  answer *= num;
+
+}
+return  answer;
+}
+console.log(powerUp(3,4))
+separator()
+//end
+
+
+//Challenge 13;factorial
+
+function factorial(n) {
+    console.log("iam the function excuting  challenge 13")
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+console.log(factorial(5));
+separator()
+
+//end 
+
+//Challenge 14:function to add up a number form 1 to n
+
+function sumMultiples(number,divisor){
+    console.log(" iam the function excuting challenge 14")
+  
+    let result= 0;
+    for (let i = 0; i < 10; i++){    
+       if (number%divisor == 0) {
+        
+         result = number + result;
+       }
+            
+        number-=1;
+
+
+}
+return result;
+}
+console.log(sumMultiples(10,2))
+separator()
+
+
+//challenge 15:Sum of Digits
+function SumDigits(n)
+{
+    console.log("Iam the function excuting challenge 15")
+    let sum = 0;
+    while (n >= 10) {
+    let last;
+
+    last = Math.floor(n%10);
+    sum =  last + sum ;
+        n /= 10;
+
+    }
+    return sum + Math.floor(n);
+}
+console.log(SumDigits(123))
+separator()
