@@ -298,7 +298,7 @@ function linearSearchAll() {
     if (item == ret) {
       index++;
       lastindex = i;
-      console.log("your item found at last index", lastindex);
+      console.log("your item found at index", lastindex);
     }
   }
   if (index == 0) {
